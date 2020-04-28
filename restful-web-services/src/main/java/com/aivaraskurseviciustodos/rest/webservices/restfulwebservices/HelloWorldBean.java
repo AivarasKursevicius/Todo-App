@@ -5,6 +5,7 @@ public class HelloWorldBean {
     private String message;
 
     public HelloWorldBean(String message) {
+
         this.message = message;
     }
 
@@ -18,6 +19,7 @@ public class HelloWorldBean {
 
     @Override
     public String toString() {
-        return String.format("HelloWorldBean [message=%s]", message);
+        return String.format("HelloWorldBean [message=%s]",
+                message);
     }
 }
