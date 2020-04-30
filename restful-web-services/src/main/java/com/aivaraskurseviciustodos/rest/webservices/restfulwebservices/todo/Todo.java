@@ -10,6 +10,8 @@ public class Todo {
   private Date targetDate;
   private boolean isDone;
 
+  protected Todo() {}
+
   public long getId() {
     return id;
   }
