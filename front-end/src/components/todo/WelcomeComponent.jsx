@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import HelloWorldService from "../../api/todo/HelloWorldService.js";
+import { ErrorMessage } from "formik";
 
 class WelcomeComponent extends Component {
   constructor(props) {
@@ -55,7 +56,14 @@ class WelcomeComponent extends Component {
 
   handleErrorResponse(error) {
     console.log(error.response);
-    this.setState({ welcomeMessage: error.response.data.message });
+    let errorMessage = "";
+    if (error.message) {
+      errorMessage += error.message;
+    }
+    if (error.response && error.response.data) {
+      errorMessage += error.message;
+    }
+    this.setState({ welcomeMessage: errorMessage });
   }
 }
 
