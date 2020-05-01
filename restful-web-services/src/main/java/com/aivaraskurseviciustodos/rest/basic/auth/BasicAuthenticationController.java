@@ -1,7 +1,8 @@
-package com.aivaraskurseviciustodos.rest.webservices.restfulwebservices.basic.auth;
+package com.aivaraskurseviciustodos.rest.basic.auth;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 // Controller

@@ -1,4 +1,4 @@
-package com.aivaraskurseviciustodos.rest.webservices.restfulwebservices.basic.auth;
+package com.aivaraskurseviciustodos.rest.basic.auth;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
